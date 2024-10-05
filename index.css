@@ -325,75 +325,72 @@ text-align: justify;
     color: #7244D2;
     font-weight: bold;
 }
-
+#check{
+    display: none;
+}
+.menu{
+    font-size: 2em;
+    display: none;
+}
 /* ///////////////// media //////////// */
-
-@media(max-width : 770px) {
-    /* section{
+@media screen and (max-width: 480px) {
+    .menu{
+        display: block;
+    }
+    section{
         padding: 1em;
     }
-    body{
-        font-size: 12px;
+    .navigation{
+        position: fixed;
+        top: 4.5em;
+        right: 90em;
+        width: 100vw;
+        height: 100vh;
+        font-size: 1em;
+        padding: 1em 1em;
+        background-color: #ffffff;
+    }
+    .navigation a{
+        display: block;
+    }
+    #check:checked ~ .navigation{
+        right: -5em;
     }
     header{
-    font-size: 10px;
-    padding: 1em 2em 0em 0em;
-    width: 100vw;
-    }
-    
-    .home-content{
-        font-size: 0.8em;
-        width: 100vw;
-    }
-    .home-content span{
-        font-size: 1em;
-    }
-    .home-content h3{
-        font-size: 1em;
+        padding: 0.5em 1em;
     }
     .home{
-        height: 80vh;
-        padding: 4em;
-    } */
-    /* //////////// about ////////// */
-
-    /* .about{
+        background: none;
+        padding: 0 1em;
         height: 60vh;
-        background-image: cover;
+        
     }
-    .about-content {
-       justify-content: end;
-       font-size: 0.7em;
-      
+    .home-content{
+        width:100% ;
+        margin-top: 2em;
     }
-    .about-description{
-        width: 70vw;
-        padding: 3em;
-       
-    } */
-    /* /////////// projects /////////// */
-    /* .content{
+    .home-content h5{
+        font-size: 0.7em;
+    }
+    .main-btn{
+        font-size: 0.5em;
+        margin-top: 0;
+    }
+    .socials{
+        font-size: 0.6em;
+        padding: 0;
+    }
+    /* /////////////////////////////// about//////// */
+    .section-title{
+        font-size: 1em;
+    }
+    .about{
+        background: none;
+    }
+    .about-content{
+        margin-top: 1em;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2em;
-        padding: 0 0 2em 0 ;
-    } */
-
-    /* /////////// technologies////////// */
-    /* .techno{
-        height: 50vh;
-    } */
-
-    /* ////////////  contact /////////// */
-    /* .input-container{
-       padding: 2em;
-       width: 100vw;
-       margin-top: 1em;
-    } */
-    /* ////// footer */
-
-    /* .footer{
-        font-size: 0.8em;
-    } */
+        justify-content: start;
+        width: 100%;
+    }
 }
