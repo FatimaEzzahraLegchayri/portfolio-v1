@@ -451,3 +451,75 @@ text-align: justify;
         font-size: 0.5em;
     }
 }
+@media (min-width : 481px) and (max-width : 768px) {
+    .menu{
+        display: block;
+    }
+    section{
+        padding: 1em 3em;
+    }
+    .navigation{
+        position: fixed;
+        top: 4.5em;
+        right: 90em;
+        width: 70vw;
+        height: 100vh;
+        font-size: 1.5em;
+        padding: 1em 3em;
+        background-color: #ffffff;
+    }
+    .navigation a{
+        display: block;
+    }
+    #check:checked ~ .navigation{
+        right: -5em;
+    }
+    header{
+        padding: 1em 2em;
+    }
+    .home h5{
+        font-size: 1em;
+    }
+    .main-btn{
+        /* font-size: 1em; */
+        min-width: 9em;
+    .home{
+        margin-right: 10em;
+    }
+    .home span{
+        font-size: 1.3em;
+    }
+    .about{
+        background: none;
+        height: fit-content;
+        margin: 1.5em 0;
+
+    }
+    .about-description{
+        width: 90%;
+    }
+    .about-content{
+        margin-top: 3em;
+        justify-content: center;
+    }
+    .projects{
+        margin: 1.5em 0;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-card{
+        display: block;
+        order: 1;
+    }
+    .about-project{
+        /* display: block; */
+        order: 2;
+        width: 97%;
+        padding: 1em 0;
+    }
+    .techno{
+        height: 50vh;
+    }
+}
