@@ -247,7 +247,7 @@ text-align: justify;
 }
 @keyframes moveLeft {
     from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
+    to { transform: translateX(-380%); }
 }
 .tech-icons {
     display: flex;
@@ -338,7 +338,7 @@ text-align: justify;
         display: block;
     }
     section{
-        padding: 1em;
+        padding: 1em 2em;
     }
     .navigation{
         position: fixed;
@@ -361,13 +361,13 @@ text-align: justify;
     }
     .home{
         background: none;
-        padding: 0 1em;
-        height: 60vh;
+        padding:   1em 2em;
+        height: 50vh;
         
     }
     .home-content{
         width:100% ;
-        margin-top: 2em;
+        margin-top: 1em 0 0 0 ;
     }
     .home-content h5{
         font-size: 0.7em;
@@ -383,14 +383,71 @@ text-align: justify;
     /* /////////////////////////////// about//////// */
     .section-title{
         font-size: 1em;
+        margin-top: 0;
+        padding-top: 1em;
     }
     .about{
         background: none;
+        height: fit-content;
+        margin: 1em 0;
     }
     .about-content{
         margin-top: 1em;
-        display: flex;
-        justify-content: start;
+        align-items: start; 
+        
+    }
+    .about-description{
         width: 100%;
+        font-size: 0.8em;
+    }
+    .main-btn{
+        margin-top: 1em;
+    }
+    /* ////////////////////////////// projects ///////////////// */
+    .content{
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-project{
+        width: 100%;
+        margin: 1em auto;
+        display: block;
+        order: 2;
+    }
+    .projects-card{
+        display: block;
+        order: 1;
+    }
+    .projects{
+        margin: 0.5em 0;
+    }
+    /* ////////////////////////////// techno /////////// */
+    .techno{
+        margin-top: 0;
+        height: fit-content;
+    }
+    .tech-icons i{
+        font-size: 6em;
+    }
+    .tech-icons img{
+        width: 6em;
+        height: 6em;
+    }
+    /* /////////////////////////////// contact ////////////// */
+    .contact{
+        margin-top: 1em;
+        height: fit-content;
+    }
+    .input-container{
+        margin-top: 2em;
+        width: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer p{
+        font-size: 0.5em;
     }
 }
