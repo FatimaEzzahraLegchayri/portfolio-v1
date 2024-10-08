@@ -67,6 +67,13 @@ section{
     width: 50%;
     margin-top: 6em;
 }
+.home-content h6{
+    font-size: 1em;
+    line-height: 1.2em;
+    /* text-align: justify; */
+    font-weight: 300;
+    /* background-color: #3A2073; */
+}
 
 .home h5{
     font-size:1.3em;
@@ -137,7 +144,7 @@ section{
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-top: 6em;
+    margin-top: 2em;
 }
 .about-description{
 width: 50%;
@@ -370,7 +377,7 @@ text-align: justify;
         margin-top: 1em 0 0 0 ;
     }
     .home-content h5{
-        font-size: 0.7em;
+        font-size: 0.3em;
     }
     .main-btn{
         font-size: 0.5em;
